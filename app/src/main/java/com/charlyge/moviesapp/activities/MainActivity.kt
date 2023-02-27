@@ -35,7 +35,9 @@ class MainActivity : AppCompatActivity(), MovieAdapter.itemClickListener {
 
 
         binding.movieRecylerView.setHasFixedSize(true)
-
+        movieViewModel.errorResponse.observe(this){
+            progressBar.dismiss()
+        }
 
         val layoutManager = AutoFitGridLayoutManager(this, 500)
         binding.movieRecylerView.layoutManager = layoutManager

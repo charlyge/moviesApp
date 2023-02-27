@@ -21,14 +21,6 @@ import javax.inject.Named
 internal object NetworkModelModules {
 
     @Provides
-    @Named("apiKey")
-    fun provideApiKey(application: Application): String {
-        return BuildConfig.API_KEY
-    }
-
-
-
-    @Provides
     @Named("provideOkHttpClient")
     fun provideOkHttpClient(): OkHttpClient {
         val okhttp = OkHttpClient.Builder()

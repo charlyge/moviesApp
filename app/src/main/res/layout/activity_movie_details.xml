@@ -24,11 +24,13 @@
                 android:layout_marginBottom="16dp"
                 card_view:cardCornerRadius="4dp"
                 card_view:cardElevation="0dp"
+                android:background="@color/black"
                 card_view:cardUseCompatPadding="false">
 
                 <ImageView
                     android:id="@+id/detail_thumbnail"
                     android:layout_width="match_parent"
+                    android:background="@color/black"
                     android:layout_height="match_parent" />
                 <ImageView
                     android:layout_width="wrap_content"

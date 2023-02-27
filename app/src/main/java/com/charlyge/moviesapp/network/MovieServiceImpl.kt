@@ -10,7 +10,7 @@ import retrofit2.http.*
 interface MovieServiceImpl {
 
     @GET("/3/movie/popular")
-    suspend fun popularMovies(@Query("api_key") key: String,@Query("page") page: Int): Response<MovieResults>
+    suspend fun popularMovies(@Query("api_key") key: String): Response<MovieResults>
 
 
 

@@ -12,7 +12,7 @@ class MovieService @Inject internal constructor(private val movieServiceImpl: Mo
 
     suspend fun getPopularMovies():Flow<Response<MovieResults>> {
         return flow {
-            emit(movieServiceImpl.popularMovies(BuildConfig.API_KEY,1))
+            emit(movieServiceImpl.popularMovies(BuildConfig.API_KEY))
         }
     }
 

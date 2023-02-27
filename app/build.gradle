@@ -71,5 +71,8 @@ dependencies {
     kapt "androidx.hilt:hilt-compiler:1.0.0"
     implementation "com.google.dagger:hilt-android:2.45"
     kapt "com.google.dagger:hilt-compiler:2.45"
+    androidTestImplementation('androidx.test.espresso:espresso-intents:3.5.1')
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.5.1'
+    androidTestImplementation 'com.squareup.okhttp3:mockwebserver:4.10.0'
 
 }
